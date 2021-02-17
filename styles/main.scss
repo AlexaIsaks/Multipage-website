@@ -1,0 +1,38 @@
+//Project follows BEM methodology and SASS 7-1 architecture
+
+//Base
+@import "base/reset";
+
+//Helpers
+@import "helpers/variables";
+@import "helpers/typography";
+@import "helpers/mixins";
+@import "helpers/animation";
+
+//Layout (macro components)
+@import "layout/body";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/form";
+@import "layout/table";
+@import "layout/comment";
+@import "layout/footer";
+
+//Pages (Page specific styles)
+@import "pages/home";
+@import "pages/bio";
+@import "pages/portfolio";
+@import "pages/blog";
+@import "pages/packages";
+@import "pages/contact";
+@import "pages/save-for-later";
+@import "pages/post";
+
+//Components
+@import "components/buttons";
+@import "components/hamburger";
+@import "components/inputs";
+@import "components/logo";
+@import "components/modal";
+@import "components/accordion";
+

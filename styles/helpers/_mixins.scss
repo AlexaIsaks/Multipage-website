@@ -1,0 +1,54 @@
+//Media queries and breakpoints
+@mixin media-query($breakpoint) {
+    @media only screen and (map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+//LAYOUT:
+//Center blocks, elements
+@mixin dflex-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+//Flexbox layout
+@mixin dflex($direction, $wrap, $justify-content, $align-items) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+//BUTTONS:
+//Form buttons
+@mixin button--form {
+    background-color: $bg-secondary;
+    border: none;
+    font-size: 1.2rem;
+    color: $text-white;
+
+    &:hover {
+        background-color: $bg-hover;
+    }
+}
+
+//Social buttons (like, comment, "save for later")
+@mixin button--social {
+    height: 2rem;
+    width: 2.3rem;
+    
+    background-color: $bg-primary;
+    font-size: 1rem;
+    color: $text-icon;
+
+    @include media-query("large") {
+      
+        &:hover {
+            color: $text-hover;
+        }
+    }
+}

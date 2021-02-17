@@ -1,0 +1,33 @@
+//Packages page block/component
+.main-packages {
+    padding: 9rem 1.5rem 1.5rem;
+    @include dflex-center;
+}
+
+.packages {
+    padding: 1.5rem 0;
+    min-height: 80vh;
+    width: 100%;
+
+    @include media-query("large") {
+        width: 80%;
+    }
+}
+
+.packages__intro-container {
+    margin-bottom: 1.5rem;
+}
+
+.packages__title {
+    margin-bottom: 1.5rem;
+    @include typo-page-title;
+}
+
+.packages__text {
+    line-height: 1.8;
+    background-color: $bg-green;
+}
+
+.packages__table-container {
+    max-width: 100%;
+}

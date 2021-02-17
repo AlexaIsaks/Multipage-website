@@ -1,0 +1,53 @@
+//Accordion block/component
+
+.accordion {
+    width: 100%;
+}
+
+.accordion__button {
+    @include dflex(row, wrap, space-between, center);
+    padding: 0.8rem;
+    width: 100%;
+
+    background-color: $bg-primary;
+    border: 1px solid $b-primary;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 1rem;
+    text-align: left;
+    color: $text-primary;
+    cursor: pointer;
+    outline: none;
+}
+
+.accordion__chevron {
+    display: block;
+}
+
+.accordion__body {
+    display: none;
+    padding: 0.5rem;
+
+    border-right: 1px solid $b-primary;
+    border-bottom: 1px solid $b-primary;
+    border-left: 1px solid $b-primary;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.accordion__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.accordion__item {
+    margin-bottom: 0.5rem;
+}
+
+//Accordion toggle:
+//Rotate chevron icon upon click
+.is-collapsed {
+    transform: rotate(180deg);
+}

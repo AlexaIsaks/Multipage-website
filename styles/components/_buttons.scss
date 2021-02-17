@@ -1,0 +1,79 @@
+//Button block/component
+.button {
+    border-radius: 2px;
+    font-family: $font-primary;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+//Hero button
+.button--hero {
+    display: block;
+    padding: 1rem 0.3rem 0.8rem;
+    height: 4.4rem;
+    width: 11.4rem;
+
+    border: 2px solid $b-secondary;
+    font-size: 1.6rem;
+    color: $text-white;
+
+    &:hover {
+        border-color: $b-hover;
+        color: $text-hover;
+    }
+
+    @include media-query("medium") {
+        padding: 1.2rem 0.5rem 1rem;
+        height: 5rem;
+        width: 12rem;
+
+        font-size: 1.8rem;
+    }
+}
+
+//Close button
+.button--modal {
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: $text-icon;
+}
+
+//Form buttons in different sizes
+.button--form-sm {
+    @include button--form;
+    padding: 0.6rem;
+    width: 5rem;
+}
+
+.button--form-lg {
+    @include button--form;
+    padding: 1rem;
+    width: 100%;
+}
+
+//Social (like, comment, "save for later") buttons with different borders
+.button--social-border-none {
+    @include button--social;
+    border: none;
+}
+
+.button--social-border {
+    @include button--social;
+    border: 1px solid $b-primary;
+}
+
+.button--social-border-responsive {
+    @include button--social;
+    border: 1px solid $b-primary;
+
+    @include media-query("large") {
+        border: none;
+    }
+}
+
+//Like button toggle
+.is-liked {
+    color: $text-hover;
+}

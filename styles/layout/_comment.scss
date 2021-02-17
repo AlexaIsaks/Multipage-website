@@ -1,0 +1,88 @@
+//Comment block/component
+.comment__header {
+    @include dflex(row, wrap, flex-start, center);
+    padding: 0.5rem 0;
+
+    border-bottom: 1px solid $b-primary;
+}
+
+.comment__title {
+    font-size: 1.2rem;
+}
+
+.comment__comment-count {
+    margin-left: 0.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.comment__form-post {
+    display: none;
+    padding: 1rem;
+}
+
+.comment__form-post--modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+    background-color: $bg-primary;
+}
+
+.comment__form-post--blog {
+    margin-bottom: 1rem;
+
+    @include media-query("large") {
+        width: 60%;
+    }
+
+}
+
+.comment__section {
+    height: 23rem;
+    padding: 0.8rem 0;
+    overflow-y: auto;
+}
+
+.comment__user-comment {
+    margin-bottom: 0.7rem;
+}
+
+.comment__user-details-container {
+    @include dflex(row, wrap, flex-start, center);
+    margin-bottom: 0.2rem;
+}
+
+.comment__user {
+    margin-right: 0.2rem;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.comment__bullet {
+    margin: 0 0.2rem;
+}
+
+.comment__date {
+    color: $text-secondary;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.comment__message {
+    margin-bottom: 0.4rem;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.comment__text {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,23 @@
+//Website animation
+
+//Fade in
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+//Slide from top
+@keyframes slideDown {
+    0% {
+        top: -100rem;
+    }
+
+    100% {
+        top: 3rem;
+    }
+}

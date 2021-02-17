@@ -1,0 +1,71 @@
+//Bio page block/component
+
+.main-bio {
+    @include dflex-center;
+    padding: 10rem 1.5rem 1.5rem;
+}
+
+.bio {
+    @include dflex(column, wrap, center, center);
+    padding: 1.5rem 0;
+    min-height: 80vh;
+    width: 100%;
+
+    @include media-query("medium") {
+        @include dflex(row, wrap, space-between, flex-start);
+    }
+}
+
+.bio__image-container {
+    margin-bottom: 1.5rem;
+    height: auto;
+    width: 100%;
+
+    @include media-query("medium") {
+        order: 2;
+        margin: 0;
+        width: 50%;
+    }
+}
+
+.bio__image {
+    height: auto;
+    width: 100%;
+
+    border-radius: 2px;
+
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+.bio__description-container {
+
+    @include media-query("medium") {
+        padding: 0 2rem;
+        width: 50%;
+    }
+}
+
+.bio__title {
+    margin-bottom: 1.5rem;
+    @include typo-page-title;
+}
+
+.bio__text {
+    margin-bottom: 1rem;
+
+    line-height: 1.8;
+}
+
+.bio__subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.bio__list {
+    padding-left: 1rem;
+}
+
+.bio__item {
+    line-height: 1.8;
+}

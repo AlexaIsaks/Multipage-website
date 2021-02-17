@@ -1,0 +1,54 @@
+//Form block/component
+.form {
+    width: 100%;
+}
+
+.form--social {
+    @include dflex(row, wrap, flex-start, center);
+    padding-bottom: 0.5rem;
+
+    border-bottom: 1px solid $b-primary;
+}
+
+.form__title {
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.form__button {
+    margin-bottom: 1.5rem;
+}
+
+.form__button-social {
+    margin-right: 0.2rem;
+}
+
+.form__radio-group {
+    @include dflex-center;
+}
+
+.form__radio-set {
+    width: 50%;
+    @include dflex(row, wrap, flex-start, center);
+}
+
+.form__radio {
+    margin: 0;
+}
+
+.form__radio-label {
+    margin-left: 0.5rem;
+    padding-top: 0.05rem;
+    width: auto;
+}

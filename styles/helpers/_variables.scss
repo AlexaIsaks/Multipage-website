@@ -1,0 +1,35 @@
+//Colour
+//Background colour
+$bg-primary: rgba(255,255,255,1);               //Page , social button
+$bg-secondary:#919191;                          //Button, hamburger menu
+$bg-green: #e7f1c2;                             //Text
+$bg-peach: rgb(243, 220, 174);                  //Text
+$bg-overlay-light: rgba(45, 45, 45, 0.2);       //Image Overlay
+$bg-overlay-dark: rgba(45, 45, 45, 0.7);        //Modal Overlay
+$bg-hover: #CDA34F;                             //Hover
+
+//Font colour
+$text-primary: #2d2d2d;                 //Navigation, paragraphs, subheadings, footer text
+$text-secondary: #5b5b5b;               //Headings
+$text-icon: #919191;                    //Icons, button icons
+$text-white: #fff;                      //Text on pictures, button
+$text-hover: #CDA34F;                   //Hover
+
+//Border colour
+$b-primary: rgba(145,145,145, 0.4);      //Input, textarea, table, social buttons, comment section, accordion
+$b-secondary:#fff;                       //Button
+$b-hover: #CDA34F;                       //Hover
+
+//Font family
+$font-primary: 'Nunito', sans-serif;
+$font-secondary: 'Caveat', cursive;
+
+//Media queries and breakpoints
+//Breakpoint reference: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+$breakpoints: (
+    "extra-small": "max-width: 600px",                  //Extra small devices: phones
+    "small": "min-width: 600px",                        //Small devices: portrait tablets, large phones
+    "medium": "min-width: 768px",                       //Medium devices: landscape tablets
+    "large": "min-width: 992px",                        //Large devices: desktops, laptops
+    "extra-large": "min-width: 1200px"                  //Extra large devices: large laptops, desktops
+);

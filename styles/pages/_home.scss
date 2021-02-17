@@ -1,0 +1,52 @@
+//Home page 
+//Hero image block/component
+.hero-image {
+    height: 100vh;
+    width: 100vw;
+    @include dflex-center;
+
+    background: url("../images/annie-spratt-hero-image.jpg") center/cover no-repeat;
+
+    animation-name: fadeIn;
+    animation-duration: 3s;
+
+    @include media-query("extra-large") {
+        background-size: 100% auto;
+    }
+}
+
+.hero-image__header {
+    padding: 1rem;
+    width: 100%;
+
+    @include media-query("medium") {
+        width: 80%;
+    }
+}
+
+.hero-image__title {
+    margin-bottom: 2.5rem;
+
+    font-family: $font-secondary;
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: $text-white;
+
+    @include media-query("medium") {
+        font-size: 3rem;
+    }
+
+    @include media-query("large") {
+        text-align: center;
+    }
+}
+
+.hero-image__author {
+    display: block;
+    margin-left: auto;
+    width: 10rem;
+}
+
+.hero-image__button {
+    margin: 0 auto;
+}

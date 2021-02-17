@@ -1,0 +1,11 @@
+//Typography
+
+//Mixin page titles
+@mixin typo-page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: $font-secondary;
+    font-weight: 400;
+    color: $text-secondary;
+}
+

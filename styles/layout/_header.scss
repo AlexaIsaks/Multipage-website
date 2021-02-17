@@ -1,0 +1,22 @@
+//Header block/component
+.header {
+    position: fixed;
+    padding: 1.5rem 1.5rem 1rem;
+    width: 100%;
+
+    z-index: 1;
+    background-color: $bg-primary;
+    box-shadow: 0 5px 10px -4px $b-primary;
+
+    @include media-query("large") {
+        @include dflex(row, wrap, space-between, center);
+    }
+}
+
+.header__icon-container {
+    @include dflex(row, wrap, space-between, center);
+
+    @include media-query("large") {
+        display: block;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-family-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/9d333017a2.js" crossorigin="anonymous"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Photography</title>
+</head>
+
+<body class="body">
+    <!--Page header-->
+    <header class="header">
+        <div class="header__icon-container">
+            <a href="../index.html" target="_top"><img src="../images/logo.png" alt="business logo" class="logo"></a>
+            <!--Mobile/hamburger menu icon-->
+            <div class="hamburger">
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar hamburger__bar-middle"></span>
+                <span class="hamburger__bar"></span>
+            </div>
+            <!--Mobile/hamburger menu icon END-->
+        </div>
+        <!--Page main navigation-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./bio.html" target="_top" class="nav__link">Bio</a></li>
+                <li class="nav__item"><a href="./portfolio.html" target="_top" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="./blog.html" target="_top" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="./packages.html" target="_top" class="nav__link">Packages</a></li>
+                <li class="nav__item"><a href="./contact.html" target="_top" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="./save-for-later.html" target="_top" class="nav__link">Save for Later</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Page main navigation END-->
+    </header>
+    <!--Page main content-->
+    <main id="main-save" class="main-save">
+        <!--"Save for Later" page: User's saved images and blog post wil be found on this page-->
+        <div class="save">
+
+            <aside class="save__aside">
+                <!--Accordion: Drop down filter menu-->
+                <div class="accordion">
+                    <button type="button" class="accordion__button"><span>Filter List</span><i
+                            class="fas fa-chevron-up accordion__chevron"></i></button>
+                    <div class="accordion__body">
+                        <ul class="accordion__list">
+                            <li class="accordion__item">
+                                <input type="radio" id="all" name="list" value="all" class="accordion__input">
+                                <label for="all">All</label>
+                            </li>
+                            <li class="accordion__item">
+                                <input type="radio" id="images" name="list" value="image" class="accordion__input">
+                                <label for="images">Images</label>
+                            </li>
+                            <li class="accordion__item">
+                                <input type="radio" id="post" name="list" value="blog" class="accordion__input">
+                                <label for="post">Blog</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="save__section">
+                <header>
+                    <h1 class="save__title">Saved for Later</h1>
+                </header>
+
+                <h2 class="save__subtitle">No Saved Items</h2>
+
+                <div class="save__group">
+                    <!--Saved images and blog posts goes here-->
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--Page footer-->
+    <footer class="footer">
+        <div class="footer__container">
+            <!--Social media links-->
+            <div class="footer__social-icon-container">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!--Social media links END-->
+            <p class="footer__text">&copy; Photography &vert; All rights reserved &vert; South Africa</p>
+        </div>
+    </footer>
+    <!--JavaScript-->
+    <script type="module" src="../scripts/main.js"></script>
+</body>
+
+</html>

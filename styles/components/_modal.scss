@@ -1,0 +1,104 @@
+//Modal block/componet
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+    overflow-y: auto;
+    background-color: $bg-overlay-dark;
+}
+
+
+.modal__close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0.5rem 0.5rem 0 0;
+    Z-index: 1;
+
+    @include media-query("medium") {
+        z-index: auto;
+    }
+}
+
+.modal__content-container {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem 0.5rem 1rem;
+    height: auto;
+    width: 98%;
+
+    background-color: $bg-primary;
+    border-radius: 2px;
+
+    animation-name: slideDown;
+    animation-duration: 0.8s;
+
+    @include media-query("medium") {
+        padding: 2rem 1rem;
+        width: 90%;
+    }
+}
+
+.modal__content {
+    width: 100%;
+
+    @include media-query("medium") {
+        @include dflex(row, wrap, center, flex-start);
+        height: 30.5rem;
+    }
+}
+
+.modal__image-container {
+    height: 100%;
+    width: 100%;
+
+    @include media-query("medium") {
+        margin: 0 1rem 0 0;
+        width: 50%;
+    }
+
+    @include media-query("large") {
+        width: 60%;
+    }
+}
+
+.modal__image {
+    height: auto;
+    width: 100%;
+
+    border-radius: 2px;
+
+    @include media-query("medium") {
+        height: 100%;
+
+        object-fit: contain;
+    }
+}
+
+
+.modal__social-interaction {
+    position: relative;
+    padding: 1rem 0;
+    width: 100%;
+
+    @include media-query("medium") {
+        padding: 1rem;
+        width: 40%;
+
+        border-left: 1px solid $b-primary;
+    }
+
+    @include media-query("large") {
+        width: 30%;
+    }
+}

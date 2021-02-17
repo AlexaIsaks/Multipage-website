@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/9d333017a2.js" crossorigin="anonymous"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Photography</title>
+</head>
+
+<body class="body">
+    <!--Page header-->
+    <header class="header">
+        <div class="header__icon-container">
+            <a href="../index.html" target="_top"><img src="../images/logo.png" alt="business logo" class="logo"></a>
+            <!--Mobile/hamburger menu icon-->
+            <div class="hamburger">
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar hamburger__bar-middle"></span>
+                <span class="hamburger__bar"></span>
+            </div>
+            <!--Mobile/hamburger menu icon END-->
+        </div>
+        <!--Page main navigation-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./bio.html" target="_top" class="nav__link">Bio</a></li>
+                <li class="nav__item"><a href="./portfolio.html" target="_top" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="./blog.html" target="_top" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="./packages.html" target="_top" class="nav__link">Packages</a></li>
+                <li class="nav__item"><a href="./contact.html" target="_top" class="nav__link">Contact</a></li>
+                <li class="nav__item"><a href="./save-for-later.html" target="_top" class="nav__link">Save for Later</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Page main navigation END-->
+    </header>
+    <!--Page main content-->
+    <main class="main-portfolio">
+        <!--Portfolio page header: Hidden-->
+        <header>
+            <h1 class="main-portfolio__header">Portfolio</h1>
+        </header>
+
+        <!--Modal-->
+        <div class="modal">
+            <button type="button" class="button button--modal modal__close"><i class="fas fa-times"></i></button>
+            <div class="modal__content-container">
+
+                <div class="modal__content">
+                    <div class="modal__image-container">
+                        <!--Selected image goes here-->
+
+                    </div>
+
+                    <!--Comments section-->
+                    <div class="modal__social-interaction">
+                        <!--Social form-->
+                        <form id="form-modal-social" class="form form--social">
+                            <div>
+                                <!--Like button-->
+                                <button type="button" title="Like"
+                                    class="button button--social-border form__button-social button-like"><i
+                                        class="fas fa-heart"></i></button>
+                                <!--Comment button-->
+                                <button type="button" title="Comment"
+                                    class="button button--social-border form__button-social button-comment"><i
+                                        class="fas fa-comment"></i></button>
+                                <!--"Save for later" button-->
+                                <button type="button" title="Save for Later"
+                                    class="button button--social-border button-save"><i
+                                        class="fas fa-plus"></i></button>
+                            </div>
+                        </form>
+                        <!--Social form END-->
+
+                        <div class="comment">
+                            <header class="comment__header">
+                                <h2 class="comment__title">Comments</h2>
+                                <!--Comment count goes here-->
+                                <p class="comment__comment-count"></p>
+                            </header>
+
+                            <div class="comment__form-post comment__form-post--modal">
+                                <!--"Post a Comment" form-->
+                                <form id="form-comment" action="#" method="post" class="form">
+                                    <h3 class="form__title">Post a Comment</h3>
+
+                                    <div class="form__group">
+                                        <label for="username" class="form__label">Name*</label>
+                                        <input type="text" id="username" name="username" class="input" required>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="comment" class="form__label">Message*</label>
+                                        <textarea id="comment" name="comment" rows="10" cols="10"
+                                            class="input input--textarea"></textarea>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <button type="submit" class="button button--form-sm button-post">Post</button>
+                                        <button type="button"
+                                            class="button button--form-sm button-cancel">Cancel</button>
+                                    </div>
+                                </form>
+                                <!--"Post a Comment" form END-->
+                            </div>
+
+                            <div class="comment__section">
+                                <!--Users' comments goes here-->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--Comment section END-->
+                </div>
+            </div>
+        </div>
+
+        <!--Portfolio page: Photo/image gallery-->
+        <div class="gallery">
+            <!--Gallery image 1-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-1.jpg" alt="image 1" data-image-id="1" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="1" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 2-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-2.jpg" alt="image 2" data-image-id="2" class="gallery__image">
+                <div data-image-id="2" class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="2" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 3-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-3.jpg" alt="image 3" data-image-id="3" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="3" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 4-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-4.jpg" alt="image 4" data-image-id="4" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="4" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 5-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-5.jpg" alt="image 5" data-image-id="5" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="5" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 6-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-6.jpg" alt="image 6" data-image-id="6" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="6" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 7-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-7.jpg" alt="image 7" data-image-id="7" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="7" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 8-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-hero-image.jpg" alt="image 8" data-image-id="8" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="8" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="button-save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 9-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-9.jpg" alt="image 9" data-image-id="9" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="9" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 10-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-10.jpg" alt="image 10" data-image-id="10" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="10" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 11-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-11.jpg" alt="image 11" data-image-id="11" class="gallery__image">
+                <div class="gallery__form-container">
+                    <!--Social form-->
+                    <form data-image-id="11" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                    <!--Social form END-->
+                </div>
+            </div>
+
+            <!--Gallery image 12-->
+            <div class="gallery__image-container">
+                <img src="../images/annie-spratt-image-12.jpg" alt="image 12" data-image-id="12" class="gallery__image">
+                <div class="gallery__form-container">
+                    <form data-image-id="12" class="form gallery__form">
+                        <div>
+                            <!--Like button-->
+                            <button type="button" title="Like"
+                                class="button button--social-border-responsive form__button-social button-like"><i
+                                    class="fas fa-heart"></i></button>
+                            <!--Comment button-->
+                            <button type="button" title="Comment"
+                                class="button button--social-border-responsive form__button-social button-comment"><i
+                                    class="fas fa-comment"></i></button>
+                            <!--"Save for later" button-->
+                            <button type="button" title="Save for Later"
+                                class="button button--social-border-responsive button-save"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!--Portfolio page: Photo/image gallery END-->
+    </main>
+    <!--Page footer-->
+    <footer class="footer">
+        <div class="footer__container">
+            <!--Social media links-->
+            <div class="footer__social-icon-container">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!--Social media links END-->
+            <p class="footer__text">&copy; Photography &vert; All rights reserved &vert; South Africa</p>
+        </div>
+    </footer>
+    <!--JavaScript-->
+    <script type="module" src="../scripts/main.js"></script>
+</body>
+
+</html>
