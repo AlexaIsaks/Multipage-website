@@ -72,11 +72,20 @@ There are key elements required for this task to showcase the skills learnt in t
 
 * The index page should look like this:
 
-<p align="center"><img alt="index page" src="./readme-images/index-page.jpg" width="600"></p>
+<p align="center"><img alt="Home page desktop" src="./readme-images/home-desktop.png" width="600"></p>
 
 * Other pages:
 
-<p align="center"><img alt="portfolio page" src="./readme-images/portfolio-page.jpg" style="margin-right: 2" width="400"><img alt="save for later page" src="./readme-images/save-for-later-page.jpg" width="400"></p>
+<p align="center"><img alt="Portfolio page desktop" src="./readme-images/portfolio-desktop.png" width="600"></p>
+</br>
+</br>
+<p align="center"><img alt="Blog page desktop" src="./readme-images/blog-desktop.png" width="600"></p>
+</br>
+</br>
+<p align="center"><img alt="Save for later page mobile" src="./readme-images/save-for-later-mobile.png" width="300"></p>
+</br>
+</br>
+<p align="center"><img alt="Contact page mobile" src="./readme-images/contact-mobile.png" width="300"></p>
 
 ## Acknowledgments
 
